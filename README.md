@@ -22,8 +22,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/pravinsy1/huddle-landing-page]
-- Live Site URL: [https://pravinsy1.github.io/huddle-landing-page/]
+- Solution URL: https://github.com/pravinsy1/huddle-landing-page
+- Live Site URL: https://pravinsy1.github.io/huddle-landing-page/
 
 ## My process
 
