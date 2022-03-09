@@ -1,0 +1,435 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap");
+
+/* COLORS */
+:root {
+  --Pink: hsl(322, 100%, 66%);
+  --Very-Pale-Cyan: hsl(193, 100%, 96%);
+  --Very-Dark-Cyan: hsl(192, 100%, 9%);
+  --Grayish-Blue: hsl(208, 11%, 55%);
+}
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.flex {
+  display: flex;
+}
+
+/* TYPOGRAPHY */
+h1,
+h2,
+h3,
+h4 {
+  color: var(--Very-Dark-Cyan);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+body,
+.call-to-actions {
+  color: var(--Very-Dark-Cyan);
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+}
+.btn {
+  border: none;
+  cursor: pointer;
+}
+body,
+p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+}
+.call-to-actions {
+  font-weight: 700;
+}
+.call-to-actions:hover {
+  opacity: 50%;
+}
+/* SECTIONS */
+.hero {
+  background: url(/images/bg-hero-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+  background-color: #edfbfe;
+  height: 90vh;
+}
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 1rem;
+  max-width: 1440px;
+  margin: 0 auto;
+  /* margin-bottom: 2rem; */
+}
+.nav-bar .logo {
+  width: 250px;
+}
+.nav-bar .btn {
+  background-color: #ffffff;
+  padding: 1rem 5rem;
+  border-radius: 3rem;
+  box-shadow: 0px 0px 8px rgb(94 94 94 / 15%);
+}
+.lg-container {
+  padding: 0 1rem;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: 3rem; */
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.hero-text h1 {
+  max-width: 100%;
+  font-size: 48px;
+  font-weight: 600;
+  padding-bottom: 2rem;
+}
+.hero-text p {
+  max-width: 80%;
+
+  padding-bottom: 2rem;
+}
+.lg-container .illustration {
+  width: 55%;
+  padding: 1rem 0 5rem 0;
+}
+.illustration {
+  max-width: 100%;
+}
+.pink {
+  background-color: var(--Pink);
+  color: #fff;
+  padding: 1.2rem 5rem;
+  border-radius: 3rem;
+}
+.features {
+  margin: 5rem auto 0 auto;
+  padding: 5rem 1rem 1rem 0;
+  max-width: 1440px;
+}
+.md-container {
+  height: 450px;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 8px rgb(94 94 94 / 15%);
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem;
+  margin-bottom: 5rem;
+}
+.text {
+  max-width: 40%;
+  padding-left: 3rem;
+}
+.md-container .illustration {
+  padding: 1rem 0 1rem 0;
+  width: 30%;
+}
+.sm-container {
+  padding: 0 1rem;
+  background-color: #fff;
+  display: block;
+  box-shadow: 0px 0px 8px rgb(94 94 94 / 15%);
+  max-width: fit-content;
+  margin: 0 auto;
+  padding: 1.5rem 3rem;
+  border-radius: 1rem;
+  transform: translateY(50%);
+}
+.sm-container h2 {
+  margin-bottom: 1.5rem;
+}
+.sm-container .btn {
+  align-self: center;
+  margin-left: 12%;
+  margin-bottom: 10px;
+}
+/* FOOTER */
+.footer {
+  background-color: var(--Very-Dark-Cyan);
+  padding: 10rem 5rem 5rem 5rem;
+  color: #fff;
+}
+.footer-logo {
+  max-width: 1440px;
+  margin: 0 auto 1rem;
+}
+
+.container {
+  padding: 0 1rem;
+  max-width: 1440px;
+  margin: 0 auto;
+  /* justify-content: space-between; */
+  /* margin-right: 5%; */
+}
+.contacts {
+  margin-right: 72px;
+  /* height: 25px;
+  width: 25px; */
+}
+.footer .container p {
+  margin-bottom: 1rem;
+}
+.list {
+  /* padding-right: 25px; */
+  width: 50%;
+}
+li {
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+.footer .logo {
+  fill: white;
+}
+.social {
+  width: 100%;
+  height: 100%;
+}
+.social-links {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0 15px 0 0;
+  padding: 10px 11px;
+}
+.fb {
+  padding: 10px 13px;
+}
+.social-links:hover {
+  color: var(--Pink);
+  border: 1px solid var(--Pink);
+}
+ul {
+  list-style: none;
+}
+.column {
+  flex-direction: column;
+}
+
+.footer-icon {
+  margin-right: 25px;
+}
+.contacts {
+  padding-right: 5px;
+}
+.location-icon {
+  padding: 10px;
+}
+.copyright {
+  padding-left: 57%;
+  margin-top: -50px;
+  /* float: right; */
+}
+.attribution {
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+}
+.attribution a {
+  text-decoration: none;
+  color: var(--Pink);
+}
+.attribution a:hover {
+  border-bottom: 1px solid var(--Pink);
+}
+@media (max-width: 415px) {
+  .hero {
+    padding: 0 10px;
+    background: url(/images/bg-hero-mobile.svg);
+    background-color: #edfbfe;
+    background-position: 100%;
+    background-size: cover;
+  }
+  .nav-bar {
+    padding: 20px 10px 40px;
+  }
+  .nav-bar .logo {
+    width: 100px;
+  }
+  .nav-bar .btn {
+    font-family: "poppins";
+    font-size: 0.8rem;
+    padding: 10px 20px;
+  }
+  .hero-text h1 {
+    text-align: center;
+    font-size: 24px;
+    min-width: 100%;
+  }
+  .hero-text p {
+    text-align: center;
+    max-width: 100%;
+  }
+  .lg-container {
+    flex-direction: column;
+    padding: 40px;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero-text {
+    padding: 0 1rem;
+  }
+  .hero-text .btn {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "poppins";
+    font-size: 0.8rem;
+    padding: 10px 50px;
+  }
+  .lg-container .illustration {
+    height: fit-content;
+    width: fit-content;
+    padding: 3rem 0;
+  }
+  .features {
+    padding: 80px 2rem 2rem;
+  }
+  .md-container {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+  }
+  .md-container .text {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    margin: auto;
+    padding: 0;
+  }
+  .md-container .text h2 {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+  }
+  .md-container .illustration {
+    height: fit-content;
+    width: fit-content;
+    margin-bottom: 1.5rem;
+    /* padding: 3rem 0; */
+  }
+  .sm-container {
+    margin: 0 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .sm-container h2 {
+    font-size: 16px;
+  }
+  .sm-container .btn {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    padding: 10px 50px;
+  }
+  .footer {
+    padding: 10rem 1rem 5rem 1rem;
+  }
+  .contacts {
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .list {
+    padding: 0;
+    margin: 0;
+  }
+  .social {
+    justify-content: center;
+    margin: 2rem 0;
+  }
+  .location-icon {
+    padding: 10px 10px 0 0;
+  }
+  .copyright {
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 0 1rem;
+    margin: 0;
+  }
+  .attribution {
+    padding: 0 10px;
+    height: 2rem;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+}
